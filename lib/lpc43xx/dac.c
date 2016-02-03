@@ -46,7 +46,7 @@ void dac_init(bool fast)
 
 void dac_set(uint16_t v)
 {
-    DAC_CR = (v & 0x3FF) << 6 | (dac_fast ? DAC_CR_BIAS : 0);
+    DAC_CR = (v & 0x3FF) << 6 | (dac_fast ? 0 : DAC_CR_BIAS);
 }
 
 
