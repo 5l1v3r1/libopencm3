@@ -781,10 +781,10 @@ extern "C" {
 
 BEGIN_DECLS
 
-void gpio_set(uint32_t gpioport, uint32_t gpios);
-void gpio_clear(uint32_t gpioport, uint32_t gpios);
-void gpio_toggle(uint32_t gpioport, uint32_t gpios);
-uint32_t gpio_get(uint32_t gpioport, uint32_t gpios);
+void cm3_gpio_set(uint32_t gpioport, uint32_t gpios);
+void cm3_gpio_clear(uint32_t gpioport, uint32_t gpios);
+void cm3_gpio_toggle(uint32_t gpioport, uint32_t gpios);
+uint32_t cm3_gpio_get(uint32_t gpioport, uint32_t gpios);
 
 END_DECLS
 
